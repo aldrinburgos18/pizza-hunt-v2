@@ -48,7 +48,7 @@ function uploadPizza() {
 
   //get all records from store and set to a variable
   const getAll = pizzaObjectStore.getAll();
-
+  console.log(getAll);
   //upon a successful .getAll() execution, run this function
   getAll.onsuccess = function () {
     //if there was data in indexedDB's store, let's send it to the api server
